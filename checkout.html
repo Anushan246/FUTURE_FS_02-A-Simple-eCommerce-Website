@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Fun Student Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fun Student Store - Checkout</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#clothes">Clothes</a></li>
+                <li><a href="index.html#stationery">Stationery</a></li>
+                <li><a href="index.html#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="checkout">
+            <h2>Checkout</h2>
+            <div class="checkout-page">
+                <form id="checkout-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                    
+                    <label for="payment">Payment Method:</label>
+                    <select id="payment" name="payment" required>
+                        <option value="paytm">Paytm</option>
+                        <option value="cod">Cash on Delivery</option>
+                    </select>
+                    
+                    <div id="paytm-details" style="display: none;">
+                        <label for="paytm-number">Paytm Number:</label>
+                        <input type="text" id="paytm-number" name="paytm-number">
+                    </div>
+
+                    <button type="submit">Submit Order</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fun Student Store. All rights reserved.</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

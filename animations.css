@@ -1,0 +1,65 @@
+/* animations.css */
+
+/* Fun hover effects for product items */
+.product-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f0f8ff; /* Light background color on hover */
+}
+
+/* Fun effects for size selection */
+.sizes ul li {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sizes ul li:hover {
+    background-color: #ffeb3b; /* Bright yellow background on hover */
+    color: #333; /* Dark text color for better contrast */
+}
+
+/* Fun button animations */
+button.add-to-cart {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.add-to-cart:active {
+    transform: scale(0.95); /* Slightly scale down when clicked */
+}
+
+button.add-to-cart {
+    position: relative;
+    overflow: hidden;
+}
+
+button.add-to-cart::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+}
+
+button.add-to-cart:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Fun hover effects for checkout button */
+#checkout {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#checkout:hover {
+    background-color: #388e3c; /* Darker green background on hover */
+}
+
+#checkout:active {
+    transform: scale(0.95); /* Slightly scale down when clicked */
+}

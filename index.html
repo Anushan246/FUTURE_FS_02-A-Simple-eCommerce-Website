@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Student Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+
+</head>
+<body>
+    <header>
+        <h1>Fun Student Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#clothes">Clothes</a></li>
+                <li><a href="#stationery">Stationery</a></li>
+                <li><a href="#toys">Toys</a></li>
+                <li><a href="#shoes">Shoes</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to the Fun Student Store!</h2>
+            <p>Your one-stop shop for all things student and fun!</p>
+        </section>
+
+        <section id="clothes">
+            <h2>Clothes</h2>
+            <div class="product-list">
+                <div class="product-item" data-id="1">
+                    <img src="tshirt.jpeg" alt="Student Shirt">
+                    <h3>Student Shirt</h3>
+                    <p class="price">200.00</p>
+                    <div class="sizes">
+                        <p>Select Size:</p>
+                        <ul>
+                            <li data-size="S">S</li>
+                            <li data-size="M">M</li>
+                            <li data-size="L">L</li>
+                            <li data-size="XL">XL</li>
+                        </ul>
+                    </div>
+                    <p class="description">A stylish shirt that screams "I'm a student and I'm cool!"</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="2">
+                    <img src="download.jpeg" alt="Student Hoodie">
+                    <h3>Student Hoodie</h3>
+                    <p class="price">350.00</p>
+                    <div class="sizes">
+                        <p>Select Size:</p>
+                        <ul>
+                            <li data-size="S">S</li>
+                            <li data-size="M">M</li>
+                            <li data-size="L">L</li>
+                            <li data-size="XL">XL</li>
+                        </ul>
+                    </div>
+                    <p class="description">Stay warm and comfy while acing those exams!</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="3">
+                    <img src="tshirtjpeg.jpeg" alt="Student Shirt">
+                    <h3>Student Shirt</h3>
+                    <p class="price">250.00</p>
+                    <div class="sizes">
+                        <p>Select Size:</p>
+                        <ul>
+                            <li data-size="S">S</li>
+                            <li data-size="M">M</li>
+                            <li data-size="L">L</li>
+                            <li data-size="XL">XL</li>
+                        </ul>
+                    </div>
+                    <p class="description">A stylish shirt that screams "Buy One Get One Free!"</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- New Jeans Section -->
+<div class="product-item" data-id="2">
+    <img src="jeans.jpeg" alt="Student Jeans">
+    <h3>Student Jeans</h3>
+    <p class="price">300.00</p>
+    <div class="sizes">
+        <p>Select Size:</p>
+        <ul>
+            <li data-size="28">28</li>
+            <li data-size="30">30</li>
+            <li data-size="32">32</li>
+            <li data-size="34">34</li>
+        </ul>
+    </div>
+    <p class="description">Comfortable jeans that are perfect for studying, hanging out, and everything in between!</p>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+<!-- New Jeans Section -->
+<div class="product-item" data-id="2">
+    <img src="jeans 2.jpeg" alt="Student Jeans">
+    <h3>Student Jeans</h3>
+    <p class="price">600.00</p>
+    <div class="sizes">
+        <p>Select Size:</p>
+        <ul>
+            <li data-size="28">28</li>
+            <li data-size="30">30</li>
+            <li data-size="32">32</li>
+            <li data-size="34">34</li>
+        </ul>
+    </div>
+    <p class="description">Stay ahead of the fashion curve with these trendy jeans featuring a modern fit and stylish detailing.</p>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+            </div>
+        </section>
+
+        <section id="stationery">
+            <h2>Stationery</h2>
+            <div class="product-list">
+                <div class="product-item" data-id="4">
+                    <img src="notebook.jpeg" alt="Notebook">
+                    <h3>Notebook</h3>
+                    <p class="price">25.00</p>
+                    <p class="description">Perfect for jotting down your wildest ideas and lecture notes!</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="5">
+                    <img src="th.jpeg" alt="Pen">
+                    <h3>Pen</h3>
+                    <p class="price">65.00</p>
+                    <p class="description">The pen that's faster than a speeding bullet!</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="5">
+                    <img src="pencils.jpeg" alt="Pencil">
+                    <h3>Super Scribbler Pencil</h3>
+                    <p class="price">$5.00</p>
+                    <p class="description">Unleash your inner artist or note-taker with this vibrant, smooth-writing pencil! Perfect for doodling in the margins of your notes or sketching your next masterpiece. Comes with a fun, colorful eraser to keep things lively!</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                
+                <div class="product-item" data-id="5">
+                    <img src="pencils 2.jpeg" alt="Pencil">
+                    <h3>Student Pencil</h3>
+                    <p class="price">35.00</p>
+                    <p class="description">A pack of 12 pencils At Rupeess</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                                
+            </div>
+        </section>
+        <section id="toys">
+            <h2>Toys</h2>
+            <div class="product-list">
+                <div class="product-item" data-id="6">
+                    <img src="toy-car.jpeg" alt="Toy Car">
+                    <h3>Super Speed Toy Car</h3>
+                    <p class="price">150.00</p>
+                    <p class="description">Race into fun with this speedy toy car! Perfect for playtime or as a cool collectible for your desk. Zooms across surfaces with style!</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <<div class="product-item" data-id="6">
+                    <img src="toy-car 2.jpeg" alt="Toy Car">
+                    <h3>Turbo Racer Toy Car</h3>
+                    <p class="price">210.00</p>
+                    <p class="description">Get ready for thrilling adventures with the Turbo Racer Toy Car! This vibrant, speedy car is perfect for zooming around and igniting your imagination. Ideal for both playtime and display!</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="7">
+                    <img src="stufeed.jpeg" alt="Stuffed Animal">
+                    <h3>Cozy Stuffed Animal</h3>
+                    <p class="price">30.00</p>
+                    <p class="description">Cuddle up with this ultra-soft stuffed animal. The perfect buddy for studying, relaxing, or just hanging out. Comes in various adorable designs!</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="shoes">
+            <h2>Shoes</h2>
+            <div class="product-list">
+                <div class="product-item" data-id="8">
+                    <img src="shoes.jpeg" alt="Student Sneakers">
+                    <h3>Student Sneakers</h3>
+                    <p class="price">600.00</p>
+                    <div class="sizes">
+                        <p>Select Size:</p>
+                        <ul>
+                            <li data-size="6">6</li>
+                            <li data-size="7">7</li>
+                            <li data-size="8">8</li>
+                            <li data-size="9">9</li>
+                            <li data-size="10">10</li>
+                        </ul>
+                    </div>
+                    <p class="description">Step up your game with these stylish and comfortable sneakers. Perfect for running to class or hanging out with friends. Walk with confidence!</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="9">
+                    <img src="slippers.jpeg" alt="Cozy Slippers">
+                    <h3>Cozy Slippers</h3>
+                    <p class="price">120.00</p>
+                    <div class="sizes">
+                        <p>Select Size:</p>
+                        <ul>
+                            <li data-size="S">S</li>
+                            <li data-size="M">M</li>
+                            <li data-size="L">L</li>
+                        </ul>
+                    </div>
+                    <p class="description">Keep your feet comfy and warm with these cozy slippers. Ideal for lounging around the house or quick trips to the kitchen. Soft, snuggly, and stylish!</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        
+      
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+            <p>Total: <span id="cart-total">0.00</span></p>
+            <button id="checkout">Checkout</button>
+        </section>
+        
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
